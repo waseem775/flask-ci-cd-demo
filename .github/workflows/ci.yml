@@ -47,5 +47,7 @@ jobs:
     - name: Run Flask App and Test
       run: |
         python app.py & sleep 5
-        curl -f http://localhost:5000
+    - name: Run Tests with Pytest
+      run: pytest tests/
+
 
